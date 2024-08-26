@@ -3,7 +3,7 @@ function addScore() {
     const score = parseInt(document.getElementById('score').value);
     const password = prompt("Digite a senha para limpar pontuações:");
 
-    if (password === "42843") {
+    if (password === "412843") {
         clearScores();
         return;
     }
