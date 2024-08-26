@@ -94,7 +94,7 @@ function showSuggestions() {
 function clearScores() {
     const password = prompt("Digite a senha para limpar pontuações:");
     
-    if (password === "42843") {
+    if (password === "412843") {
         const table = document.getElementById('scoreTable').getElementsByTagName('tbody')[0];
         table.innerHTML = '';
     } else {
