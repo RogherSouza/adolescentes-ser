@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
-    background: url('https://drive.google.com/uc?export=view&id=12Z7VYrF_StA0_UZiVlvoors6LhW40n3t') no-repeat center center fixed;
-    background-size: cover;
+    background-color: #1c1c1c; /* Fundo escuro */
+    color: #e0e0e0; /* Texto claro */
     margin: 0;
     padding: 0;
     display: flex;
@@ -9,22 +9,21 @@ body {
     align-items: center;
     flex-direction: column;
     height: 100vh;
-    color: #f4f4f4;
 }
 
 .container {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: #2c2c2c; /* Fundo escuro para o container */
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     width: 80%;
     max-width: 600px;
     margin-bottom: 20px;
 }
 
-h1 {
+h1, h2 {
     text-align: center;
-    color: #333;
+    color: #e0e0e0; /* Texto claro para cabeçalhos */
 }
 
 table {
@@ -34,7 +33,7 @@ table {
 }
 
 table, th, td {
-    border: 1px solid #ccc;
+    border: 1px solid #444; /* Borda das células */
 }
 
 th, td {
@@ -43,15 +42,21 @@ th, td {
 }
 
 th {
-    background-color: #f8f8f8;
+    background-color: #333; /* Fundo das células de cabeçalho */
+    color: #e0e0e0; /* Texto claro nas células de cabeçalho */
 }
 
 tr:nth-child(even) {
-    background-color: #f2f2f2;
+    background-color: #2c2c2c; /* Cor de fundo das linhas pares */
+}
+
+tr:nth-child(odd) {
+    background-color: #1c1c1c; /* Cor de fundo das linhas ímpares */
 }
 
 td {
     cursor: pointer;
+    color: #e0e0e0; /* Texto das células */
 }
 
 .form-group {
@@ -61,12 +66,16 @@ td {
 .form-group label {
     display: block;
     margin-bottom: 5px;
+    color: #e0e0e0; /* Texto claro para labels */
 }
 
 .form-group input {
     width: 100%;
     padding: 8px;
     box-sizing: border-box;
+    background-color: #333; /* Fundo escuro para inputs */
+    color: #e0e0e0; /* Texto claro nos inputs */
+    border: 1px solid #444; /* Borda dos inputs */
 }
 
 .btn {
@@ -81,22 +90,4 @@ td {
 
 .btn:hover {
     background-color: #45a049;
-}
-
-.suggestions {
-    position: absolute;
-    border: 1px solid #ccc;
-    background-color: #fff;
-    max-height: 150px;
-    overflow-y: auto;
-    z-index: 1;
-}
-
-.suggestions div {
-    padding: 10px;
-    cursor: pointer;
-}
-
-.suggestions div:hover {
-    background-color: #f0f0f0;
 }
