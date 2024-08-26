@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adolescentes Ser</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pontuações Adolescentes Ser</h1>
+        <table id="scoreTable">
+            <thead>
+                <tr>
+                    <th>Posição</th>
+                    <th>Aluno</th>
+                    <th>Pontuação</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td contenteditable="true">1</td>
+                    <td contenteditable="true">Ana Silva</td>
+                    <td contenteditable="true">95</td>
+                </tr>
+                <tr>
+                    <td contenteditable="true">2</td>
+                    <td contenteditable="true">Carlos Oliveira</td>
+                    <td contenteditable="true">89</td>
+                </tr>
+                <tr>
+                    <td contenteditable="true">3</td>
+                    <td contenteditable="true">Maria Costa</td>
+                    <td contenteditable="true">85</td>
+                </tr>
+                <tr>
+                    <td contenteditable="true">4</td>
+                    <td contenteditable="true">João Santos</td>
+                    <td contenteditable="true">82</td>
+                </tr>
+                <tr>
+                    <td contenteditable="true">5</td>
+                    <td contenteditable="true">Paula Souza</td>
+                    <td contenteditable="true">78</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="container">
+        <h2>Adicionar Nova Pontuação</h2>
+        <div class="form-group">
+            <label for="name">Nome do Participante:</label>
+            <input type="text" id="name" placeholder="Digite o nome do participante" oninput="showSuggestions()">
+            <div id="suggestions" class="suggestions"></div>
+        </div>
+        <div class="form-group">
+            <label for="score">Pontuação (use valores negativos para descontar pontos):</label>
+            <input type="number" id="score" placeholder="Digite a pontuação">
+        </div>
+        <button class="btn" onclick="addScore()">Adicionar</button>
+        <button class="btn" onclick="clearScores()">Limpar Pontuações</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
